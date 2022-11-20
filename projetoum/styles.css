@@ -1,9 +1,10 @@
-header {
+.navbar {
+    max-height: 2rem;
+    background-color: #6B8E23 ;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
     align-items: center;
-    background-color: #6B8E23
+    padding: 1rem;
 }
 
 .menu__itens {
@@ -19,10 +20,44 @@ header {
     padding: 1rem;
 }
 
-
 a {
     text-decoration: none;
     color: white;
 }
+/* body */
 
+.principal__secao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__secao {
+    position: relative;
+    text-align: center;
+}
+
+.home__secao img {
+    max-width: 100%;
+}
+
+.home__secao h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.quemsomos__secao {
+    
+}
+
+.servicos__secao {
+    
+}
+
+.contato__secao {
+    
+}
 
