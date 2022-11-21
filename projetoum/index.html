@@ -14,21 +14,21 @@
         <a href="#home" class="navbar__Logo" id="navbar__logo"><img class="imagem__logo" src="./imagens/imagemLogo.jpg"></a>
         <ul class="menu__itens">
             <li><a href="#quemsomos">Quem Somos</a></li>
-            <li><a href="#sevicos">Seviços</a></li>
+            <li><a href="#servicos">Seviços</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </header>
     <main class="principal__secao">
-        <div class="home__secao">
+        <div class="home__secao" id="home">
             <h1 class="nomeMarca">Nome da Marca</h1>
             <img src="./imagens/home.jpeg" class="imagemHome">
         </div>
-        <div class="quemsomos__secao">
+        <div class="quemsomos__secao" id="quemsomos">
             <h1 class="titulo__topicos">Quem somos</h1>
-            <div class="quemsomos__divs">
+            <div class="container__quemsomos">
                 <div class="quemsomos__topicos">
                     <img src="./imagens/imagemHistoria.jpg">
-                    <div class="textos__secao">
+                    <div class="quemsomos__textos">
                         <h2>História</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptate excepturi cupiditate illum nesciunt ducimus aspernatur itaque facere numquam in facilis, suscipit, magnam, exercitationem ea.
                         </p>
@@ -36,21 +36,21 @@
                 </div>
                 <div class="quemsomos__topicos">
                     <img src="./imagens/imagemObjetivos.jpeg">
-                    <div class="textos__secao">
+                    <div class="quemsomos__textos">
                         <h2>Objetivos</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, totam.</p>
                     </div>
                 </div>
                 <div class="quemsomos__topicos">
                     <img src="./imagens/imagemValores.jpg">
-                    <div class="textos__secao">
+                    <div class="quemsomos__textos">
                         <h2>Valores</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, iure inventore! Ut cumque eum maxime?</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="servicos__secao">
+        <div class="servicos__secao" id="servicos">
             <h1 class="titulo__topicos">Serviços</h1>
             <div class="container__servicos">
                 <div class="servicos__topicos">
@@ -63,23 +63,32 @@
                 </div>
             </div>
         </div>
-        <div class="contato__secao">
+        <div class="contato__secao" id="contato">
             <h1 class="titulo__topicos">Contato</h1>
+            <div class="container__contato">
+                <form action="" method="post">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email" autocomplete="off">
+                    <label>Mensagem</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="">
+                    <input type="hidden" name="redirectTo" value="#home">
+                </form>
+            </div>
         </div>
     </main>
-    <footer>
-        <ul class="footer__secao">
-            <li>Home</li>
-            <li>Quem Somos</li>
-            <li>Serviços</li>
-            <li>Contato</li>
-        </ul>
-        <ul class="redesSociais">
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>LinkedIn</li>
-        </ul>
-
+    <footer class="footer__secao">
+        <div class="container__footer">
+            <ul class="redesSociais">
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>LinkedIn</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
